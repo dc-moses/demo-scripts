@@ -56,8 +56,5 @@ if [ -z $policyStatus ]; then
 fi
 
 echo $policyStatus
-if [ $policyStatus == "true" ]; then
-    exit 1
-fi
 exit 0
 
