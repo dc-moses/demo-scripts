@@ -42,5 +42,6 @@ fi
 runStatus=$(curl -k -s -X 'POST' "$url/codedx/api/projects/$projectID;branch=$branch/analysis" -H 'accept: application/json' -H "API-Key: $apikey" --form 'filenames=""' --form 'includeGitSource="true"' --form 'gitBranchName=""' --form 'branchName=""')
 
 echo $runStatus
+sh $runStatus
 
 exit 0
